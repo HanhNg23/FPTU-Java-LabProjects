@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Succulent Login</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width" />
+<base href="/" />
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript"
+	src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<h1>Basic Authentication</h1>
+	<div th:if="${param.error}">Invalid username and password !</div>
+	<div th:if="${param.logout}">You have been logged out !</div>
+	<form th:action="@{/login}" method="post">
+		<div>
+			<input type="text" name="username" placeholder="Username" />
+		</div>
+		<div>
+			<input type="password" name="password" placeholder="Password" />
+		</div>
+		<input type="submit" value="Log in" />
+	</form>
+
+
+	<h1>OAuth2 Authentication</h1>
+	<div class="container unauthenticated">
+		<table class="table table-striped">
+			<tr>
+				<td><a href="/oauth2/authorization/github" style="color: purple;">GitHub</a></td>
+			</tr>
+			<tr>
+				<td><a href="/oauth2/authorization/google" style="background-color: purple;">Google</a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="container authenticated" style="display: none">
+		Logged in as : <span id="user"></span>
+	</div>
+
+	<script type="text/javascript">
+		$.get("/user", function(data){
+			$("#user").html(data.name);
+			$(".unauthenticated").hide()
+			$(".authenticated").show()
+		});
+	</script>
+
+
+</body>
+</html>

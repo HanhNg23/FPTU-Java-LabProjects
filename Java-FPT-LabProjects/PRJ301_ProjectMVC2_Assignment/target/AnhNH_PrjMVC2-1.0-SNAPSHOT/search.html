@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+     <head>
+          <title>Search Page</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     <body>
+          <div style="margin-bottom: 20px;">
+               <form action="DispatchServlet" >
+                    <input type="submit" value="Logout" name="btAction" />                 
+               </form>
+          </div>
+          <form action="DispatchServlet" method="POST">
+               Search Value <input type="text" name="txtSearchValue" value="">
+               <input type="submit" value="Search" name="btAction"><br>
+          </form> <!--che dau duong truyen thi dung post-->
+     </body>
+</html>
