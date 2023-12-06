@@ -10,6 +10,6 @@
 ### FOLDER 2 - JAVA FPT LABS
 > - Apply Java programming knowledge to exercises according to the FPT'S course curriculums
 > - PRO192 Labs - Knowledge application: Java Core
-> - LAB211 Labs - Knowledge application: Java Core, Projects primarily
+> - LAB211 Labs - Knowledge application: Java Core
 > - PRJ391 Labs - Knowledge application: Java Core, Java Web, JSP, Servlet, MVC2 architecture
 
