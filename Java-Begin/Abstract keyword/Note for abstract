@@ -1,0 +1,20 @@
+We learn more about the Abstraction
+at GeeksforGeeks: https://www.geeksforgeeks.org/abstract-classes-in-java/?ref=lbp
+Abstract Classes in Java
+abstract = abstract classes cannot be instantiated, but they can have a subclass
+         = abstract methods are declared without an implementation
+
+
+Following are some important observations about abstract classes in Java.
+------------------------------------------------------------------------
+  1. An instance of an abstract class can not be created.
+  2. Constructors are allowed.
+  3. We can have an abstract class without any abstract method.
+  4. Abstract classes can not have final methods because when you
+     make a method final you can not override it but the abstract
+     methods are meant for overriding.
+  5. We are not allowed to create object for any abstract class.
+  6. We can define static methods in an abstract class
+-------------------------------------------------------------------------
+
+Let see the Demo for each observation about abstract classes in Java
