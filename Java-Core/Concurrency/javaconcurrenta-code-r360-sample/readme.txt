@@ -11,3 +11,5 @@ was
 mvn site
 This will launch the app. Now click around the animation you want to test
 Find coverage report at/Users/vgrazi/dev/JavaConcurrentAnimatedMavenSVN/target/surefire-reports
+
+This is the collection of java concurrency from the source code [Java Concurrent Animated Code](https://sourceforge.net/p/javaconcurrenta/code/HEAD/tree/)
