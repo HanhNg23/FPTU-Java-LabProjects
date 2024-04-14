@@ -15,7 +15,8 @@ jobs:
   check-condition: # job id
     strategy:
       matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        # os: [ubuntu-latest, macOS-latest, windows-latest]
+         os: [windows-latest]
     runs-on: ${{ matrix.os }} # type of machine to run the job on
     if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
     outputs:
