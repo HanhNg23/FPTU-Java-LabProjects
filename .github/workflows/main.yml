@@ -1,0 +1,57 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is practicing GitHub Actions to run code java file from the src code in ${{ github.repository }}
+
+on:   
+  workflow_dispatch:
+    inputs:
+      java-main-file-directory:
+        description: "Provide the directory of the Java file containing the main method in the src workspace"
+        required: true
+        default: 'src/start/Hello.java'
+        type: string
+
+jobs:
+  # job1
+  check-condition: # job id
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+    runs-on: ${{ matrix.os }} # type of machine to run the job on
+    if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type = 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
+    outputs:
+       result-check: ${{ steps.check-correct-format.outputs.result }}
+    steps:
+      - name: Check input directory 
+        id: check-correct-format
+        if: ${{ startsWith(inputs.java-main-file-directory, 'src') && endsWith(inputs.java-main-file-directory, '.java') }}
+        run: echo "result=0" >> "$GITHUB_OUTPUT"
+
+  # job2
+  running-java-file: # job id
+    needs: check-condition
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+    runs-on: ${{ matrix.os }} # type of machine to run the job on
+    defaults:
+      run:
+        working-directory: ./src
+    #if: ${{ needs.check-condition.outputs.result-check }}
+    if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type = 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
+    steps:
+      - name: Result condition pass or fail
+        run: |
+          if [[ ${{ needs.check-condition.outputs.result-check }} == 0 ]]; then exit 0; else exit 1; fi
+      - uses: actions/checkout@v4
+      - name: Setup Java JDK
+        uses: actions/setup-java@v4.2.1
+        with:
+          java-version: '17'
+          distribution: 'oracle'
+          # The package type (jdk, jre, jdk+fx, jre+fx)
+          java-package: jdk # defaults to jdk
+      - name: Display JDK version
+        run: java --version
+      - name: Run Java file
+        run: java ${{ inputs.java-main-file-directory }}
+           
