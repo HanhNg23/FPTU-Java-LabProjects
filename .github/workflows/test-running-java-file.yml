@@ -24,7 +24,7 @@ jobs:
       - name: Check input directory 
         id: check-correct-format
         if: ${{ startsWith(inputs.java-main-file-directory, 'src') && endsWith(inputs.java-main-file-directory, '.java') }}
-        run: echo "result=0" >> "$GITHUB_OUTPUT"
+        run: echo "result=0" >> $GITHUB_OUTPUT
 
   # job2
   running-java-file: # job id
