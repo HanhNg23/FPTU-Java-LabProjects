@@ -33,9 +33,6 @@ jobs:
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
     runs-on: ${{ matrix.os }} # type of machine to run the job on
-    defaults:
-      run:
-        working-directory: ./src
     #if: ${{ needs.check-condition.outputs.result-check }}
     if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
     steps:
