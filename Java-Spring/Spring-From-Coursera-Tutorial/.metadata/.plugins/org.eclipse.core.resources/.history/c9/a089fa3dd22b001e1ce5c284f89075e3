@@ -1,0 +1,13 @@
+package com.student.aspect;
+
+import javax.inject.Named;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Named
+@Aspect
+//Aspect is indicate unit of modularity for cross-cutting concerns
+public class StudentAspect {
+
+	
+}

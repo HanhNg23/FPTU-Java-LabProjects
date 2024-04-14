@@ -1,0 +1,23 @@
+# Spring Properties
+spring:
+  application:
+     name: service01
+# Discovery Server Access
+eureka:
+  client:
+     serviceUrl:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+        preferIpAddress: true
+        metadataMap:
+        #many instances of service01 will be create --> this will help to generate the uniquename = idname for each new instance of service01
+            instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        #each 100 period of seconds --> eureka client sent heart beat to eureka server registry + copy registry from eureka registry and stors it in service01's' cache
+        leaseRenewalIntervalInSeconds: 100
+        #emoves, a service from the Eureka Registry after the Eureka Service has not received 3 consecutive missing heartbeats of the desired number of seconds
+        leaseExpirationDurationInSeconds: 2000
+ # HTTP Server - service01 will host on localhost with port 8082 --> differ from port of the eureka service registry is 1111
+server:
+  port: 8082  
+
+

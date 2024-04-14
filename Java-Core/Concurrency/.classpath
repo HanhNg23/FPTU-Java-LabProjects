@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="fucking-java-concurrency/.mvn/wrapper"/>
+	<classpathentry kind="src" path="fucking-java-concurrency/src/main/java"/>
+	<classpathentry kind="src" path="java-concurrency-getstarted/src"/>
+	<classpathentry kind="lib" path="fucking-java-concurrency/bin/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="javaConcurrentAnimated.jar"/>
+	<classpathentry kind="lib" path="jcip.github.com/jcip-annotations.jar"/>
+	<classpathentry kind="lib" path="jcip.github.com/jcip-annotations-src.jar"/>
+	<classpathentry kind="lib" path="jcip.github.com/jcip-examples-src.jar"/>
+	<classpathentry kind="output" path="fucking-java-concurrency/target/classes"/>
+</classpath>

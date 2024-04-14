@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\solutions\Lab04.1_Transaction"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab04.1"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\solutions\Lab03.1_AOP_Part1"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\solutions\Lab02.5_JPA_JPARepository_Post"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Files\Files"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab02.5"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\solutions\Lab02.2_JPA_JPARepository_Query"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\solutions\Lab02.1_JPA_JPARepository"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab01.3_SpringBoot_Angular_Client_Student"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab01.1\Student"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\student\student"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\student"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\student"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab02.3"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab01.2"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3\home\developer\Desktop\StudentWork\setup\Lab01.1"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs3"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab02.1_SpringBoot_Basic"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab07.1_SpringBoot_Controller"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\setup\Lab07.1"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\setup\Lab06.4"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab06.3_SpringBoot_Client"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab06.3_SpringBoot_ContentNegotiation"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab06.1_SpringBoot_Post"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab06.2_SpringBoot_Client"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\setup\Lab06.2"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab04.1_SpringBoot_Yaml"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\solutions\Lab03.1_SpringBoot_RestController"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\setup\Lab02.1"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files_Cs2\home\developer\Desktop\StudentWork\setup"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files\home\developer\Desktop\Studentwork\solutions"/>
+			<item value="C:\Users\HOANGANH\Documents\Code Project File\Lab_Spring_Coursera\Files\home\developer\Desktop\Studentwork\setUp\Lab02.1"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

@@ -1,1 +1,0 @@
-Main-Class: vgrazi.concurrent.samples.launcher.ConcurrentExampleLauncher
