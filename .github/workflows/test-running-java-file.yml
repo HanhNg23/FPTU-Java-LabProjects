@@ -24,7 +24,7 @@ jobs:
       - name: Check input directory 
         id: check-correct-format
         if: ${{ endsWith(inputs.java-main-file-directory, '.java') }}
-        run: echo "result=0" >> $GITHUB_OUTPUT
+        run: echo "result=true" >> $GITHUB_OUTPUT
 
   # job2
   running-java-file: # job id
@@ -38,7 +38,7 @@ jobs:
     steps:
       - name: Result condition pass or fail
         run: |
-          if [[ ${{ needs.check-condition.outputs.result-check }} == 0 ]]; then exit 0; else exit 1; fi
+          if [[ ${{ needs.check-condition.outputs.result-check }} == 'true' ]]; then exit 0; else exit 1; fi
       - uses: actions/checkout@v4
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
