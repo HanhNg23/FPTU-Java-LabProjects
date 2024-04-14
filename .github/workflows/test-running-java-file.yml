@@ -7,7 +7,7 @@ on:
       java-main-file-directory:
         description: "Provide the directory of the Java file containing the main method in the src workspace"
         required: true
-        default: 'src/start/Hello.java'
+        default: 'notfound'
         type: string
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Check input directory 
         id: check-correct-format
-        if: ${{ startsWith(inputs.java-main-file-directory, 'src') && endsWith(inputs.java-main-file-directory, '.java') }}
+        if: ${{ endsWith(inputs.java-main-file-directory, '.java') }}
         run: echo "result=0" >> $GITHUB_OUTPUT
 
   # job2
