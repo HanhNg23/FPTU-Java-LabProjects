@@ -18,16 +18,13 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
     runs-on: ${{ matrix.os }} # type of machine to run the job on
     if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type = 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
-    defaults:
-      run:
-       working-directory: ./src
     outputs:
-      result-check: ${{ steps.check-correct-format
+       result-check: ${{ steps.check-correct-format.outputs.result }}
     steps:
       - name: Check input directory 
         id: check-correct-format
         if: ${{ startsWith(inputs.java-main-file-directory, 'src') && endsWith(inputs.java-main-file-directory, '.java') }}
-        run: echo "🏃‍♂️Checking inputs.java-main-file-directory for correct format" >> "$GITHUB_OUTPUT"
+        run: echo "result=0" >> "$GITHUB_OUTPUT"
 
   # job2
   running-java-file: # job id
@@ -40,6 +37,7 @@ jobs:
       run:
         working-directory: ./src
     #if: ${{ needs.check-condition.outputs.result-check }}
+    if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type = 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
     steps:
       - name: Result condition pass or fail
         run: |
