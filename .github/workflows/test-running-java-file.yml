@@ -34,12 +34,8 @@ jobs:
         os: [ubuntu-latest, macOS-latest, windows-latest]
     runs-on: ${{ matrix.os }} # type of machine to run the job on
     #if: ${{ needs.check-condition.outputs.result-check }}
-    if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
+    if: ${{ needs.check-condition.outputs.result-check }} == 'true' && github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
     steps:
-      - name: Result condition pass or fail
-        if: ${{ needs.check-condition.outputs.result-check }} != 'true' }}
-        run: |
-               exit 1; fi
         # | if [[ ${{ needs.check-condition.outputs.result-check }} == 'true' ]]; then exit 0; else exit 1; fi
       - uses: actions/checkout@v4
       - name: Setup Java JDK
