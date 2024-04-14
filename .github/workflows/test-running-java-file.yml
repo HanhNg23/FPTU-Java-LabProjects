@@ -37,8 +37,10 @@ jobs:
     if: ${{ github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' && github.ref_name == 'Work-With-Github-Workflow' }}
     steps:
       - name: Result condition pass or fail
+        if: ${{ needs.check-condition.outputs.result-check }} != 'true' }}
         run: |
-          if [[ ${{ needs.check-condition.outputs.result-check }} == 'true' ]]; then exit 0; else exit 1; fi
+               exit 1; fi
+        # | if [[ ${{ needs.check-condition.outputs.result-check }} == 'true' ]]; then exit 0; else exit 1; fi
       - uses: actions/checkout@v4
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
