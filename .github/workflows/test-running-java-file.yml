@@ -36,6 +36,10 @@ jobs:
     runs-on: ${{ matrix.os }} # type of machine to run the job on
     if: ${{ needs.check-condition.outputs.result-check }} == 'true' && github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' }}
     steps:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+    runs-on: ${{ matrix.os }} # type of machine to run the job on
+    defaults:
+      run:
       - uses: actions/checkout@v4
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
