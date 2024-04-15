@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: run-java-file-workflow
 run-name: ${{ github.actor }} is practicing GitHub Actions to run code java file from the src code in ${{ github.repository }}
 
 on:   
