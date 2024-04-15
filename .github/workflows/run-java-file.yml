@@ -1,4 +1,5 @@
-name: run-java-file-workflow
+
+name: run-java-file
 run-name: ${{ github.actor }} is practicing GitHub Actions to run code java file from the src code in ${{ github.repository }}
 
 on:   
@@ -7,7 +8,7 @@ on:
       java-main-file-directory:
         description: "Provide the directory of the Java file containing the main method in the src workspace"
         required: true
-        default: 'notfound'
+        default: 'directory of class contain main method'
         type: string
 
 jobs:
@@ -36,10 +37,6 @@ jobs:
     runs-on: ${{ matrix.os }} # type of machine to run the job on
     if: ${{ needs.check-condition.outputs.result-check }} == 'true' && github.event_name  == 'workflow_dispatch' && github.ref_type == 'branch' }}
     steps:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
-    runs-on: ${{ matrix.os }} # type of machine to run the job on
-    defaults:
-      run:
       - uses: actions/checkout@v4
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
@@ -51,6 +48,4 @@ jobs:
         run: java --version
       - name: Run Java file
         run: java ${{ inputs.java-main-file-directory }}
-           
-
-        
+      - run: echo "📢 Completed workflow "
