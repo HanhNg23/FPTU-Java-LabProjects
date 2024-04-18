@@ -1,5 +1,4 @@
 # Java-Labs-Projects 
-> *Repository to store my own Java Lab Projects*
 ---
 ![Static Badge](https://img.shields.io/badge/Java-blue?logo=openjdk&labelColor=white) ![Static Badge](https://img.shields.io/badge/Spring-green?logo=spring&logoColor=white) ![Static Badge](https://img.shields.io/badge/Spring_Boot-green?logo=springboot&logoColor=white) ![Static Badge](https://img.shields.io/badge/Spring_Security-green?logo=springsecurity&logoColor=white)
 
