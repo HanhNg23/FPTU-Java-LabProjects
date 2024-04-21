@@ -6,4 +6,4 @@
 - 📑 My documents : [Java Core Get Started](https://isha-docs-java-lab.vercel.app/spaces/section-1-java-core/part-1-get-started/1-java-get-started/)
 - 📁 My Java Core Folder Directory: [Java Core Series](https://github.com/HanhNg23/Java-Lab-Projects/tree/098af1f4a70baee9d0d71c594fc3f40b66313d89/Java-Core)
 
-Keep updating soon...
+
